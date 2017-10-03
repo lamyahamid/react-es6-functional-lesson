@@ -1,11 +1,6 @@
 # Unidirectional Data Flow
 
-Let's start with a video:
-
-<video width="640" height="480" controls="controls" type="video/mp4">
-<source src="https://embed-ssl.wistia.com/deliveries/cd5d58d2bc562a606ab045c5c056ada1680eea13.bin">
-Your browser does not support the video tag.
-</video>
+Let's start with [a video explaining this concept.](https://generalassembly.wistia.com/medias/v2uenqkgwk).
 
 In React applications, data usually flows from the top down. Why do we care? How does this apply?
 
