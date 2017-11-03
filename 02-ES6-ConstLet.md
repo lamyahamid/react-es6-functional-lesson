@@ -148,7 +148,7 @@ visually than `var`s, and less likely to introduce bugs to your code.
 
 ### Thought Exercise:
 
-Here's a tricky one. Look at your blog project - the `index.js` file. You have:
+Here's a tricky one. Look at this `index.js` file. You have:
 
 ```js
 var post = {

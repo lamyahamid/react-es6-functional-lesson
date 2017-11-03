@@ -53,10 +53,3 @@ handleChange(event) {
 ```
 
 **Never change props in a component** - changes to props happen in the component that passes them down.
-
-
-That's it on ES6! Here are some additional resources for you to read on your own time.
-  - [Official Documentation on Components (including Lifecycle)](https://facebook.github.io/react/docs/react-component.html)
-  - [React Docs - Thinking in React](https://facebook.github.io/react/docs/thinking-in-react.html)
-  - [A Cartoon Guide To Flux by Lin Clark](https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207#.m53psmlww)
-  - [Redux State Management Library](http://redux.js.org/)
