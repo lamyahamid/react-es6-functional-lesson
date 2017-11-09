@@ -1,4 +1,13 @@
-# React Component Lifecycle
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) React Component Lifecycle
+
+
+### Learning Objectives
+*After this lesson, you will be able to:*
+- List the three categories of the React component lifecycle
+- Define the main methods in each lifecycle category
+
+
+## React Component Lifecycle
 
 Okay - you've aced it so far. Let's get technical!
 

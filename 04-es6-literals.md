@@ -1,3 +1,11 @@
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) ES6 - Literals and Imports
+
+
+### Learning Objectives
+*After this lesson, you will be able to:*
+- Simplify expressions using object literals
+- Simplify expressions using template literals
+- Define imports without global variables
 
 This is the last bit of ES6 we'll check out before doing an exercise!
 

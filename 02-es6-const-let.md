@@ -1,3 +1,12 @@
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) ES6 - `const` and `let`
+
+
+### Learning Objectives
+*After this lesson, you will be able to:*
+- Contrast `const` with `var`
+- Contrast `let` with `var`
+- Apply `const` and `let`
+
 
 ## `const` and `let`
 

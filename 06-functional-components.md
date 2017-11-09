@@ -1,4 +1,12 @@
-# Functional Components
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Functional Components
+
+
+### Learning Objectives
+*After this lesson, you will be able to:*
+- Contrast class components with functional components
+- Rewrite class components into functional components
+
+## Functional Components
 
 Functional components give you a simpler way of declaring React components. React **class** components give you properties that you don't always need, namely state, methods like `setState`, lifecycle methods like `componentDidMount` and `componentWillReceiveProps`, `refs` and more.
 
@@ -120,3 +128,69 @@ Use a functional component. But:
 And only if you _don't_ need any of those things -- use a Functional Component.
 
 Functional Components are a great example of what people talk about when they say that React is "declarative", or gives us a declarative API. Rather than telling the DOM _how_ to render the UI we want - which nodes to change and how - we can use JSX to "declare" how we want the markup to look, and React alters the DOM accordingly.
+
+
+## We Do: Functional Components Exercise
+
+Now that we've learned about functional components, is there any place we can apply them?
+
+Look through the projects you've done so far. Are there any places you could use a functional component?
+
+Let's do one together. Open your to-do list project.
+
+Look at your `ListItem.js`. All it does is return JSX. This is prime functional component material.
+
+First, rewrite `ListItem.js` to be a functional component.
+
+```javascript
+import React, { Component } from 'react';
+import './App.css';
+
+const ListItem = props => (
+  <div>
+    <li>{props.doThis}</li>
+  </div>
+)
+
+export default ListItem
+
+
+```
+
+All that has changed is that `ListItem` now looks much more like a function than a component. However, `ListItem` is still a component - it returns JSX of UI to be rendered to the virtual DOM - therefore, we still need to export it (so we can call it from `App.js`), and we still need the `import` statements - a React component won't work without React!
+
+What else in your projects can you change?
+
+Not only can the `ListItem` be converted into a functional component. The
+entire `ToDoList` can be its own functional component as well. Here is `ListItem`.
+
+```js
+import React, { Component } from 'react';
+import './App.css';
+
+const ListItem = props => (
+  <div>
+    <li>{props.doThis}</li>
+  </div>
+)
+
+export default ListItem
+```
+
+## You Do: Functional Components in the ToDo List
+
+Make a new file called `ToDoList.js` and have it look very much like the
+`const ListItem` functional component above. It should have the following
+properties:
+
+* Define as `const ToDoList` similar to `ListItem`.
+* Import `ListItem` because it will render `ListItems`.
+* Accept `props` like `ListItem`.
+* Expect there something called `toDoItemArray` attached to props.
+* Use `props.toDoItemArray.map(item, index)` to iterate over each item.
+* Render `<ListItem>` components inside the map.
+* Pass the proper properties (`doThis` and `key`) to the `<ListItem>` component
+
+The syntax of getting the mapping to work can be tricky. Notice that it must
+be surrounded in curly braces, like the fruit list example that uses `.map()`
+to generate a table.

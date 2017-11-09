@@ -1,4 +1,13 @@
-# Unidirectional Data Flow
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Unidirectional Data Flow
+
+
+### Learning Objectives
+*After this lesson, you will be able to:*
+- Define unidirectional flow
+- Diagram data in a component hierarchy
+
+
+## What is Unidirectional Data Flow?
 
 Let's start with [a video explaining this concept.](https://generalassembly.wistia.com/medias/v2uenqkgwk).
 

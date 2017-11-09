@@ -1,4 +1,13 @@
-# Immutable Data Types
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Immutable Data Types
+
+
+### Learning Objectives
+*After this lesson, you will be able to:*
+- Define immutable data type
+- List common mutable and immutable data types
+
+
+## What is Immutable?
 
 Something that is **immutable** is something that cannot be changed. In JavaScript, objects and arrays are mutable - they _can_ be changed. A simple example of object mutation (note that I declare the object as a const, but it is still mutated):
 

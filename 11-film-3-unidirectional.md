@@ -1,14 +1,15 @@
-## Film Project: Continued
-
-You should already have the film project started. If not, fork and clone the `react-film` repo.
-
-If you didn't follow along from the previous assignment, you can jump ahead to today's starter code by switching to the `add-state` branch.
-
-You can run your app with `npm install && npm run start`.
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) You Do: Film Exercise - Unidirectional Flow
 
 ## Your Mission
 
-Your goal today is to be able to add films to a user's faves and filter the films the user is looking at. To do this, you'll need to move your state up to the top of the component tree so all of the data is more easily shared across components. Remember unidirectional flow - data is going to go down the component tree, so you'll want our states as high as possible.
+Stop any project you currently have running; let's go back to the film application that you've started. You can run the app with `npm start`.
+
+You're almost finished! Now, you need to:
+
+- Add films to a user's faves
+- Filter the films the user is looking at
+
+To do this, you'll need to move your state up to the top of the component tree so all of the data is more easily shared across components. Remember unidirectional flow - data is going to go down the component tree, so you'll want our states as high as possible.
 
 ![](http://bitmakerhq.s3.amazonaws.com/resources/react-film-library-component-hierarchy.png)
 
@@ -66,10 +67,10 @@ handleClick(e) {
   e.stopPropagation()
   console.log('Handling Fave click!')
 
-  // Add this line. We'll call the function passed through props
+  // Add this line. You'll call the function passed through props
   this.props.onFaveToggle()
 
-  // Delete the `setState` line. We no longer track state here
+  // Delete the `setState` line. You no longer track state here
   // this.setState({isFave: !this.state.isFave})
 }
 ```
@@ -145,7 +146,7 @@ this.setState({faves})
 
 Now that the `handleFaveToggle` method lives on the `App` component, you want to pass it all the way down the tree so that you can call it when the "Fave" button is clicked.
 
-In the `App` component's `render` method, add a new prop to the `FilmListing` component called `onFaveToggle`. Its value should be a reference to the `handleFaveToggle` method we just finished writing.
+In the `App` component's `render` method, add a new prop to the `FilmListing` component called `onFaveToggle`. Its value should be a reference to the `handleFaveToggle` method you just finished writing.
 
 #### Step 12: Pass the `onFaveToggle` function to `FilmRow` through props
 

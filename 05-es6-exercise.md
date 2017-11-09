@@ -1,4 +1,7 @@
-## Quick ES6 Exercise!
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) ES6 Recap and Exercise
+
+
+## ES6 Recap
 
 We've just learned a bunch of ES6.
 
@@ -66,7 +69,7 @@ object key-value pair inside an object.
  const greeting = name => `Hi, ${name}.`;
  ```
 
-### Let's put this together.
+## Let's put this together.
 
 Look at [this codepen](https://codepen.io/susir/pen/yMWvWm?editors=001). Try to modify it to ES6 syntax.
 
