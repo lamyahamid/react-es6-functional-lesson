@@ -161,7 +161,7 @@ class FruitTable extends React.component {
 ### The `render()` Method
 
 This is the one method that every React class component **must** have. It is called in two parts of the component lifecycle - at the beginning, when the component is being initiated/mounted, and when the component is being updated.
-- In `render`, you return JSX using the compoment's `props` and `state`.
+- In `render`, you return JSX using the component's `props` and `state`.
 - You should never set `state` in `render` - `render` should only react to changes in `state` or `props`, not create those changes.
 
 The following component renders a single `prop` and a single `state` key - a car model and a speed. Once this component is mounted, its `speed` state will increase by 1 every second. You can [try it out yourself on CodePen](https://codepen.io/SuperTernary/pen/zzMPGp).
@@ -242,8 +242,8 @@ These methods are called when a component's `props` or `state` change, and are g
 
 React class components have lifecycle methods that are invoked at certain stages of a component's "life" on the DOM. Some of the lifecycle methods you'll use frequently include:
 
-    - `constructor()`: Initializes state, binds methods.
-    - `componentDidMount()`: Makes AJAX requests, gets DOM refs, binds event listeners, sets `state` if necessary.
-    - `componentWillUnmount()`: Unbinds event listeners, performs other clean up.
-    - `componentWillReceiveProps()`: Updates `state` based on changes in components.
-    - `render()`: Returns markup/UI.
+- `constructor()`: Initializes state, binds methods.
+- `componentDidMount()`: Makes AJAX requests, gets DOM refs, binds event listeners, sets `state` if necessary.
+- `componentWillUnmount()`: Unbinds event listeners, performs other clean up.
+- `componentWillReceiveProps()`: Updates `state` based on changes in components.
+- `render()`: Returns markup/UI.
